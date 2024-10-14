@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: tomato;
+}
+
+.comidas {
+    border: solid yellow 5px;
+    display: flex;
+    justify-content: space-around;
+
+    img {
+        width: 20%;
+        height: 30vh;
+    }
+}
+
+// @media (condição) {
+//     Estilos alterados
+// }
+
+@media (max-width: 400px) {
+    body {
+        background-color: rgb(255, 0, 191);
+    }
+
+    .comidas {
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            width: 80%;
+        }
+    }
+}
+
+@media (min-width: 401px) and (max-width: 800px) {
+    body {
+        background-color: turquoise;
+    }
+
+    .comidas {
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            width: 600px;
+        }
+    }
+}
